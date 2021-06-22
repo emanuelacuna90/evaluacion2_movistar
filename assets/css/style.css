@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Do Hyeon', sans-serif;
+}
+/*---Header---*/
+header{
+    background-color: rgb(35, 35, 41);
+    display: inline-block;
+    width: 16vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+}
+
+.avatar{
+    display: flex;
+    justify-content: center;
+}
+.avatar img{
+    margin: 15px 0px;
+    width: 10vw;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: rgb(85, 79, 79);
+}
+.link{
+   text-decoration: none;
+   color: rgb(226, 207, 153);
+   font-size: 20px;
+}
+
+ul li{
+    margin: 20px;
+    text-align: center;
+    list-style: none;
+
+}
+i{
+    font-size: 20px;
+}
+.container{
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+}
+
+/*--Animacion--*/
+.fondo{
+    width: 100%;
+    height: 100%;
+    background:#A3D6DB;
+    animation-name: fondo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes fondo{
+    50%{ background:#A3D6DB;}
+    100%{background:#103D42}
+  }
+
+  .sol{
+      width: 50px;
+      height: 50px;
+      background: #FFA500;
+      position: absolute;
+      top: 30%;
+      border-radius: 50%;
+      box-shadow:0px 0px 0px 10px rgba(255, 140,0,0.5);
+      animation-name: sol;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+ }
+@keyframes sol{
+    0%{left: -100px; top: 30%;}
+    50%{left: 50%; top: 5%; background:#FF4500;}
+    100%{ left: 85%; top: 10%; top:30%; background:#bee2e6; box-shadow:0px 0px 0px 10px rgba(73,95,95,0.5);};
+    
+}
+.nube{
+    background-image: url('../image/fondo1.png');
+    background-repeat: repeat-x;
+    position:absolute;
+    z-index: 1;
+    top: 10px;
+    width: 100vw;
+    height: 90%;
+    animation-name: nube;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes nube{
+    from{background-position: 0 0;}
+    to{background-position: 100% 0;}
+}
+
+.ciudad{
+    background-image: url('../image/ciudad.png');
+    background-repeat: repeat-x;
+    position: absolute;
+    width: 100%;
+    height: 86%;
+    bottom: 0px;
+    animation-name: ciudad;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes ciudad{
+    from{background-position: 0 0;}
+    to{background-position: 100% 0;}
+}
+
+.bici{
+    background-image: url('../image/marcobici.png');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-top: 380px;
+    position: absolute;
+    left: 50%;
+}
+.rueda__izq{
+    background-image: url('../image/llanta.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top:40px;
+    left: -40px;
+    width: 57px;
+    height: 57px;
+    animation-name: ruedas;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.rueda__der{
+    background-image: url('../image/llanta.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top:40px;
+    left: 70px;
+    width: 57px;
+    height: 57px;
+    animation-name: ruedas;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes ruedas{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/*--Footer--*/
+footer{
+    position: fixed;
+    z-index: 2;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(214, 212, 212, 0.5);
+    width: 100%;
+    text-align: end;
+    padding: 5px;
+    color: rgba(100, 98, 98);
+    margin-top: 10px;
+}
+  

@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+   <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../assets/css/movilstyle.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/movilstyle.css">
 </head>
 <body>
-    
+
     <header id="header">
         <a class="avatar" href="../index.html">
             <img src="../assets/image/myAvatar.png" alt="Avatar Hombre">
@@ -20,16 +21,31 @@
         <ul>
             <li><a class="link" href="./curriculum.html"><i class="far fa-address-card"></i> Curriculum Vitae</a></li>
             <li><a class="link" href="./login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-            <li><a class="link" href="./table.html"><i class="fas fa-table"></i> Tabla</a></li>
+            <li><a class="link" href=".//table.html"><i class="fas fa-table"></i> Tabla</a></li>
         </ul>
     </nav>
 </header>
-    <button id="button">Menu</button>
-     
-
-
-
-<script src="../javascript.js"></script>
-<script src="https://kit.fontawesome.com/34970b7a64.js" crossorigin="anonymous"></script>
-</body>
-</html>
+<button id="button__menu" class="button__menu">
+    <hr>
+    <hr>
+    <hr>
+</button>
+    <main class="container__login">
+       <form action="login.js" method="GET">
+           <label for="user_name">Nombre de Usuario
+               <input type="text" name="user__name">
+           </label>
+           <label>Contraseña
+                <input type="password" name="password" id="">
+           </label>
+           <input type="submit" value="Enviar">
+           
+       </form>
+    </main>
+    <footer>
+        <Create by Emanuel Acuña Gimenez>
+    </footer>
+    <script src="../javascript.js"></script>
+    <script src="https://kit.fontawesome.com/34970b7a64.js" crossorigin="anonymous"></script>
+    </body>
+    </html>

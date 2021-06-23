@@ -1,0 +1,19 @@
+.container__login{
+    background-color: hotpink;
+    width: 83vw;
+    position: absolute;
+    right: 1px;
+    height: 300px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+form{
+    background-color: blue;
+    width: 20vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -19,12 +19,11 @@
     }
     .link{
         font-size: 4vw;
-       
     }
     .button__menu{
         display: block;
-        width: 8vw;
-        height: 6vh;
+        width: 35px;
+        height: 30px;
         background: rgb(114, 115, 117);
         border: none;
         border-radius: 10%;
